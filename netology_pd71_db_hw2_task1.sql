@@ -17,7 +17,7 @@ CREATE TABLE IF NOT EXISTS musical_album_artist (
 
 CREATE TABLE IF NOT EXISTS musical_genre (
   id SERIAL PRIMARY KEY,
-  name VARCHAR(50) NOT NULL
+  name VARCHAR(50) NOT NULL UNIQUE
 );
 
 CREATE TABLE IF NOT EXISTS musical_artist_genre (
